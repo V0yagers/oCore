@@ -169,4 +169,5 @@ public final class CC {
     public static List<String> translate(List<String> input) {
         return input.stream().map(CC::translate).collect(Collectors.toList());
     }
+    
 }
