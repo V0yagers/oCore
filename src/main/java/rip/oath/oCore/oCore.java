@@ -1,8 +1,14 @@
 package rip.oath.oCore;
 
+import com.qrakn.honcho.Honcho;
+import lombok.Getter;
+import rip.oath.oCore.basics.commands.Heal;
+import rip.oath.oCore.utils.CC;
+
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.Arrays;
 
 /**
  * Discord : Voyagers#4132
@@ -11,17 +17,33 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class oCore extends JavaPlugin     {
 
-
-
+    @Getter
+    private Honcho honcho;
 
     @Override
     public void onEnable() {
-        getLogger().info("oCore has been loaded");
+
+        honcho = new Honcho(this);
+
+
+        Arrays.asList(
+                new Heal()
+
+        ).forEach(honcho::registerCommand);
+
+
+
+
+        Bukkit.getConsoleSender().sendMessage(CC.translate(" "));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&eoCore loaded"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&eAuthor : &fOath Development / voyagers258"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&eDiscord : &f Voyagers#4132 "));
+        Bukkit.getConsoleSender().sendMessage(CC.translate(" "));
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("oCore has been disabled");
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&c&loCore disabled"));
     }
 
 }
