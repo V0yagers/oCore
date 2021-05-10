@@ -4,6 +4,7 @@ import com.qrakn.honcho.Honcho;
 import lombok.Getter;
 import rip.oath.oCore.basics.commands.Clear;
 import rip.oath.oCore.basics.commands.Heal;
+import rip.oath.oCore.basics.commands.Help;
 import rip.oath.oCore.utils.CC;
 
 import org.bukkit.Bukkit;
@@ -29,7 +30,8 @@ public final class oCore extends JavaPlugin     {
 
         Arrays.asList(
                 new Heal(),
-                new Clear()
+                new Clear(),
+                new Help()
 
 
         ).forEach(honcho::registerCommand);
