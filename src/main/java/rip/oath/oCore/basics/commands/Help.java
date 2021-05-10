@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import rip.oath.oCore.utils.CC;
 
-@CommandMeta(label = "heal", permission = "ocore.heal")
+@CommandMeta(label = "help", permission = "ocore.heal")
 
 
 public class Help {
