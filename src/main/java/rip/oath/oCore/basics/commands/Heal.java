@@ -1,5 +1,6 @@
 package rip.oath.oCore.basics.commands;
 
+import com.qrakn.honcho.command.CPL;
 import com.qrakn.honcho.command.CommandMeta;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -9,7 +10,7 @@ import rip.oath.oCore.utils.CC;
 
 public class Heal {
 
-    public void execute(Player player) {
+    public void execute(Player player, @CPL("target") Player target) {
         player.setHealth(20.0);
         player.sendMessage(CC.translate(" &aYou have healed by yourself"));
     }

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="phoenix-lang-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/repo/com/qrakn/phoenix-lang/1.0-SNAPSHOT/phoenix-lang-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/repo/com/qrakn/honcho/1.0-SNAPSHOT/honcho-1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/repo/com/minexd/pidgin/1.0-SNAPSHOT/pidgin-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
