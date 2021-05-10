@@ -15,18 +15,7 @@
                 <groupId>net.md-5</groupId>
                 <artifactId>scriptus</artifactId>
                 <version>0.2</version>
-                <executions>
-                    <execution>
-                        <phase>initialize</phase>
-                        <configuration>
-                            <format>git-Zoot-%s</format>
-                            <descriptionProperty>zoot.desc</descriptionProperty>
-                        </configuration>
-                        <goals>
-                            <goal>describe</goal>
-                        </goals>
-                    </execution>
-                </executions>
+
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
